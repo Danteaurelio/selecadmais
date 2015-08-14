@@ -44,6 +44,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+		mavenRepo "http://repo.spring.io/milestone/"
     }
 
     dependencies {
@@ -52,6 +53,7 @@ grails.project.dependency.resolution = {
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
 		runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
+		
     }
 
     plugins {
@@ -64,6 +66,9 @@ grails.project.dependency.resolution = {
         compile ":asset-pipeline:2.1.5"
 		compile ':heroku:1.0.1'
 		compile ':cloud-support:1.0.11'
+        compile ':spring-security-core:2.0-RC5'
+        compile ':calendar:1.2.1'
+		compile ":database-session:1.2.1"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.8.1" // or ":hibernate:3.6.10.18"

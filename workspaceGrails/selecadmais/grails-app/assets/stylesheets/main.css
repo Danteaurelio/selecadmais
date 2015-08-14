@@ -306,6 +306,11 @@ ul.one-to-many li.add {
 	list-style-type: none;
 }
 
+ul.one-to-many li {
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+
 /* EMBEDDED PROPERTIES */
 
 fieldset.embedded {
@@ -594,3 +599,22 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	background-color:#EDEDED;
+	list-style:none;
+}
+
+#menu ul li a {
+	padding: 2px 10px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+}
+#menu ul li { display: inline; }
